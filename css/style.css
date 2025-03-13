@@ -1,0 +1,400 @@
+:root {
+  --dark-logo-color: #000000;
+  --main-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --mainfone-color: #e5e5e5;
+  --fone-color: #f5f4fa;
+  --darkfone-color: #2f303a;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+  --border-card-color: #eeeeee;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.main-title {
+  display: none;
+}
+
+/* CONTAINER */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* border: 1px solid blueviolet; */
+}
+
+/* SECTION */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* header!!!!!!!! */
+
+.logo-web {
+  margin-right: 90px;
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+.logo-studio {
+  color: var(--dark-logo-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+/* navigation */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.navi-list,
+.auth-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navi-item + .navi-item {
+  margin-left: 50px;
+}
+
+.navi-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.navi-link:hover,
+.navi-link:focus {
+  color: var(--accent-color);
+}
+.navi-link.current {
+  color: var(--accent-color);
+}
+
+.auth-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--text-color);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.auth-link:hover,
+.auth-link:focus {
+  color: var(--accent-color);
+}
+
+.auth-list {
+  margin-left: auto;
+}
+
+.auth-item + .auth-item {
+  margin-left: 40px;
+}
+/* HERO page */
+.hero {
+  padding: 200px 0px;
+  background-color: var(--darkfone-color);
+  text-align: center;
+}
+.hero-title {
+  margin-bottom: 30px;
+  color: var(--white-color);
+
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.hero-btn {
+  padding: 10px, 20px;
+  border-radius: 4px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* features */
+
+.features-title {
+  color: var(--main-text-color);
+
+  /* font-family: Roboto; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+}
+.features-text {
+  color: var(--text-color);
+
+  /* font-family: Roboto; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+}
+
+.features-list {
+  display: flex;
+  /* align-items: center; */
+}
+.features-item {
+  width: 270px;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+.features-title {
+  margin-bottom: 10px;
+}
+
+/* WORK */
+.work-title {
+  /* font-family: Roboto; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+}
+.work-item + .work-item {
+  margin-left: 30px;
+}
+
+/* team */
+.team {
+  background-color: var(--fone-color);
+}
+.team-title {
+  /* font-family: Roboto; */
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+  text-align: center;
+}
+.team-name {
+  /* font-family: Roboto; */
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+}
+.team-text {
+  color: var(--text-color);
+
+  /* font-family: Roboto; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  /* letter-spacing: 3%; */
+}
+.team-list {
+  display: flex;
+}
+.team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  background-color: var(--white-color);
+}
+
+/* FOOTER */
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--darkfone-color);
+}
+
+.footer-web {
+  display: block;
+  margin-bottom: 38px;
+
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.footer-studio {
+  color: var(--white-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+.adr-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.adr-link.location {
+  color: var(--white-color);
+}
+.adr-link {
+  color: var(--contacts-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* PORTFOLIO page */
+.portfolio-title {
+  display: none;
+}
+
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-item + .filter-item {
+  margin-left: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: hidden;
+  cursor: pointer;
+  color: var(--main-text-color);
+  background-color: var(--fone-color);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.filter-btn:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.flex-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.card-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  margin-bottom: 4px;
+  color: var(--main-text-color);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-text {
+  color: var(--text-color);
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid var(--border-card-color);
+}
+/* .box {
+  margin: 94px auto;
+} */
